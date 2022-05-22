@@ -1,0 +1,133 @@
+ * {
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+} 
+
+body, html {
+
+    background-color: #000000;
+    background-image: url('3.jpg');
+    background-repeat: no-repeat;
+
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+div.content_section {
+    margin: 3px 3px 3px 3px;
+
+    background: rgba(0, 0, 0, 0.1);
+    border-radius: 70px 70px;
+
+    text-align: center;
+    width: 99%;
+}
+
+div.contenttext {
+    padding: 4px 8px 4px 8px;
+
+    color: #000000;
+    font-size: 100%;
+    font-family: Utopia;
+    font-size: 12pt;
+    text-align: center;
+}
+
+div.section_header {
+    padding: 6px 9px 6px 9px;
+
+    background-color: #474747;
+    border: 2px solid #474747;
+
+    color:azure;
+    font-weight: bold;
+    font-size: 100%;
+    text-align: center;
+}
+
+.floating_element {
+    position: relative;
+    float: left;
+}
+
+div.table_of_contents_item a,
+div.contenttext a {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+div.table_of_contents_item a:link,
+div.table_of_contents_item a:visited,
+div.table_of_contents_item a:active {
+    color: #000000;
+}
+
+div.table_of_contents_item a:hover {
+    background-color: #000000;
+
+    color: #FFFFFF;
+}
+
+div.contenttext a:link,
+div.contenttext a:visited,
+div.contenttext a:active {
+    background-color: #DCDFE6;
+
+    color: #000000;
+}
+
+div.contenttext a:hover {
+    background-color: #000000;
+
+    color: #DCDFE6;
+}
+
+            
+.tabbedLink {
+    margin-left: 50px;
+    display: block;
+    width: auto;
+
+}
+table {
+border-collapse: collapse;
+width: 100%;
+}
+
+td, th {
+text-align: center;
+padding: 8px;
+}
+
+div.main_page {
+    position: relative;
+    display: table;
+
+   /* width: 800px;*/
+
+    margin-bottom: 3px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1px 1px 1px 1px;
+
+    border-width: 2px;
+    border-color: #3b3e53/*3f4566*/;
+    border-style: solid;
+
+
+    text-align: center;
+}
+div.page_header {
+    padding: 10px, 10px, 10px, 10px;
+    
+    text-align: center;
+    width: 100%;
+    font-weight: bold;
+    color:#190e00;
+  
+}
+

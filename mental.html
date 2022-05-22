@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Mental Health Check-in</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+ <body>
+       
+    <div class="main_page">
+    <div class="page_header">
+        <h1>Checking In Mentally!</h1>
+    </div>
+
+		<table>
+			<tr>
+				<th> <button onclick="window.location.href='index.html';">
+      Home
+    </button> </th>
+				<th><button onclick="window.location.href='pet.html';">
+      What's my Pet?
+    </button></th>
+				<th> <button onclick="window.location.href='iore.html';">
+      Introvert or Extrovert?
+    </button></th>
+				<th> <button onclick="window.location.href='music.html';">
+      What Music should I listen to?
+    </button></th>
+        <th> <button onclick="window.location.href='mental.html';">
+      Mental Health
+    </button></th>
+				<th> <button onclick="window.location.href='combo.html';">
+      Combo
+    </button></th>
+
+			</tr>
+
+		</table>
+    
+<div class="content_section floating_element">
+<div class="section_header">
+This is a way to check in mentally with yourself! Please Select 1 option for each question!</div>
+<div class="contenttext">
+
+    <br> How are you feeling?
+    <select id="feel"> <br>
+      <option value=0></option>
+      <option value=-1>Sad</option>
+      <option value=1>Happy, jubilant</option>
+      <option value=0>Ok/fine</option>
+    </select>   <br>
+
+    <br> Do you feel like you are being bullied? 
+    <select id="bully"> <br>
+      <option value=0></option>
+      <option value=-1>yes</option>
+      <option value=1>no</option>
+    </select>   <br>
+
+    <br> Do you feel overwhelmed?
+    <select id="overwhelm"> <br>
+      <option value=0></option>
+      <option value=-1>yes</option>
+      <option value=1>no</option>
+      <option value=0>kind of? it is manageable</option>
+    </select>   <br>
+
+    <br> How on top of your work have you been?
+    <select id="work"> <br>
+      <option value=0></option>
+      <option value=-1>not at all</option>
+      <option value=1>really well</option>
+      <option value=0>getting things ontime</option>
+    </select>   <br>
+
+    <br> How much happiness do you gain by completing / participating in activities? 
+    <select id="doingthings"> <br>
+      <option value=0></option>
+      <option value=-1>a lot</option>
+      <option value=1>none</option>
+      <option value=0>a little</option>
+    </select>   <br>
+
+    <br> Do you find yourself constantly avoiding people, especially those you talk to frequently?
+    <select id="social1"> <br>
+      <option value=0></option>
+      <option value=-1>yes</option>
+      <option value=1>no</option>
+      <option value=0>kind of?</option>
+    </select>   <br>
+
+    <br> Have there been any significant (negative) changes in your social life recently?
+    <select id="social2"> <br>
+      <option value=0></option>
+      <option value=-1>yes</option>
+      <option value=1>no</option>
+    </select>   <br>
+
+    <br>How stressed are you, on a scale of 0-3? (0=lowest)
+    <select id="stress"> <br>
+      <option value=0></option>
+      <option value=2>0</option>
+      <option value=1>1</option>
+      <option value=-1>2</option>
+      <option value=-2>3</option>
+    </select>   <br>
+
+    <br> How confident are you on a scale of 0-3? (0=lowest)
+    <select id="confidence"> <br>
+      <option value=0></option>
+      <option value=-2>0</option>
+      <option value=-1>1</option>
+      <option value=1>2</option>
+      <option value=2>3</option>
+    </select>   <br>
+
+    <br> Do you feel burdened/empty/helpless? (Scale of 0-3, 0=not at all)
+    <select id="burden"> <br>
+      <option value=0></option>
+      <option value=2>0</option>
+      <option value=1>1</option>
+      <option value=-1>2</option>
+      <option value=-2>3</option>
+    </select>   <br>
+
+    <br> Do you feel as if you are about to go crazy? (0-3 scale, 0=not at all)
+    <select id="crazy"> <br>
+     <option value=0></option>
+      <option value=2>0</option>
+      <option value=1>1</option>
+      <option value=-1>2</option>
+      <option value=-2>3</option>
+    </select>   <br>
+
+    <br> How anxious do you feel? (0-3 scale)
+    <select id="anxiety"> <br>
+     <option value=0></option>
+      <option value=2>0</option>
+      <option value=1>1</option>
+      <option value=-1>2</option>
+      <option value=-2>3</option>
+    </select>   <br>
+
+    <br> Has anyone asked you/ can anyone notice that you seem off/tired/sad?
+    <select id="off"> <br>
+      <option value=0></option>
+      <option value=-2>definitely</option>
+      <option value=-1>yes?</option>
+      <option value=1>no?</option>
+      <option value=2>nope</option>
+    </select>   <br>
+
+    <br>How "healthy" is your mental state right now? (0=healthy)
+    <select id="cstate"> <br>
+     <option value=0></option>
+      <option value=2>0</option>
+      <option value=1>1</option>
+      <option value=-1>2</option>
+      <option value=-2>3</option>
+    </select>   <br>
+
+    <br> How often do you have negative thoughts? (0=never)
+    <select id="thoughts"> <br>
+      <option value=0></option>
+      <option value=2>0</option>
+      <option value=1>1</option>
+      <option value=-1>2</option>
+      <option value=-2>3</option>
+    </select>   <br>
+
+    <br> Do you feel like you could use help right now? (0=no, feeling fine)
+    <select id="help"> <br>
+     <option value=0></option>
+      <option value=2>0</option>
+      <option value=1>1</option>
+      <option value=-1>2</option>
+      <option value=-2>3</option>
+    </select>   <br>
+
+    <br> Have you been diagnosed with a mental illness?
+    <select id="milness"> <br>
+      <option value=0></option>
+      <option value=-1>yes</option>
+      <option value=1>no</option>
+    </select>   <br>
+  
+
+    <input type="submit" value="submit" onclick="return getNumericValue()">  <br>
+
+    <br>
+<!--
+    <form name="test" id="diary" onsubmit="return diary()"> <br>
+    <p style="color: black"><strong>Type in a small "diary." Reflect on your responses. <br>How are you feeling? Why are you feeling what you are feeling? <br>Talk about yourself and try to regulate your emotions. You will never see this work again, <br>unless you choose to save it yourself.</p>
+    </strong><br> 
+    <input type="string" name="diary"><br>
+    <input type="submit" value="submit"> <br><br>
+    </form> <br>
+  -->
+    </div> </div> <img src="mental.png" alt="data" width=500 height=551.5>  </div>
+</div>
+
+   <!--<script src="mental.js"> -->
+     <script>
+
+    function getNumericValue() {
+      //var questions = [document.getElementById("feel"), document.getElementById("bully"), document.getElementById("overwhelm"),document.getElementById("work"),document.getElementById("doingthings"),document.getElementById("socail1")];
+     // for (let i=0; i<questions.length; i++) {
+         // var x= questions[i];
+        //  var y = parseInt(x.options[x.selectedIndex].value);
+      //    var sum=sum+y;
+    
+    //  }
+    
+    
+    var x= document.getElementById("feel");
+    var y = parseInt(x.options[x.selectedIndex].value);
+     var z= document.getElementById("bully");
+    var a = parseInt(z.options[z.selectedIndex].value);
+     var b= document.getElementById("overwhelm");
+    var c = parseInt(b.options[b.selectedIndex].value);
+     var d= document.getElementById("work");
+    var e = parseInt(d.options[d.selectedIndex].value);
+     var f= document.getElementById("doingthings");
+    var g = parseInt(f.options[f.selectedIndex].value);
+     var h= document.getElementById("social1");
+    var k = parseInt(h.options[h.selectedIndex].value);
+     var m= document.getElementById("social2");
+    var n = parseInt(m.options[m.selectedIndex].value);
+     var p= document.getElementById("stress");
+    var q= parseInt(p.options[p.selectedIndex].value);
+    var r= document.getElementById("confidence");
+    var s = parseInt(r.options[r.selectedIndex].value);
+     var t= document.getElementById("burden");
+    var u= parseInt(t.options[t.selectedIndex].value);
+    var v= document.getElementById("crazy");
+    var w = parseInt(v.options[v.selectedIndex].value);
+     var xx= document.getElementById("cstate");
+    var yy= parseInt(xx.options[xx.selectedIndex].value);
+    var zz= document.getElementById("anxiety");
+    var aa= parseInt(zz.options[zz.selectedIndex].value);
+     var bb= document.getElementById("off");
+    var cc= parseInt(bb.options[bb.selectedIndex].value);
+    var dd= document.getElementById("thoughts");
+    var ee= parseInt(dd.options[dd.selectedIndex].value);
+    var ff= document.getElementById("help");
+    var gg= parseInt(ff.options[ff.selectedIndex].value);
+     var hh= document.getElementById("milness");
+    var kk= parseInt(hh.options[hh.selectedIndex].value);
+    
+    
+    
+    var sum=y+a+c+e+g+k+n+q+s+u+w+yy+aa+cc+ee+gg+kk;
+      
+      //window.alert(sum);
+    if (sum>0) {
+        document.location.href="healthy.html";
+       
+    }
+    else if (sum<0) {
+        document.location.href="ill.html";
+       
+    }
+    else if (sum=0) {
+        document.location.href="fine.html";
+    
+        
+     }
+    
+     //var x =  document.getElementById("diary");
+   // window.alert(x);
+   window.alert("score: "+sum);
+    return true;
+    }
+    
+    </script>
+ </body>
+
+</html>
+
+

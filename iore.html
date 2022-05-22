@@ -1,0 +1,127 @@
+ <!DOCTYPE html>
+<html>
+   <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Introvert v Extrovert</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+ <body>
+       
+    <div class="main_page">
+    <div class="page_header">
+        <h1>Am I an introvert or an extrovert?</h1>
+    </div>
+    <table>
+			<tr>
+				<th> <button onclick="window.location.href='index.html';">
+      Home
+    </button> </th>
+				<th><button onclick="window.location.href='pet.html';">
+      What's my Pet?
+    </button></th>
+				<th> <button onclick="window.location.href='iore.html';">
+      Introvert or Extrovert?
+    </button></th>
+				<th> <button onclick="window.location.href='music.html';">
+      What Music should I listen to?
+    </button></th>
+        <th> <button onclick="window.location.href='mental.html';">
+      Mental Health
+    </button></th>
+				<th> <button onclick="window.location.href='combo.html';">
+      Combo
+    </button></th>
+
+			</tr>
+
+		</table>
+<div class="content_section floating_element">
+<div class="section_header">
+This is a way to find your introvertness! Please Select 1 option for each question!</div>
+<div class="contenttext">
+
+<br> Your personality
+  <select id="personality"> <br>
+    <option value=0></option>
+    <option value="-1">Shy</option>
+    <option value="1">Outgoing</option>
+    <option value="-2">Introvert</option>
+      <option value="2">Extrovert</option>
+  </select>   <br>
+ <br>  Your free time go to
+      <select id="freetime"> <br>
+        <option value=0></option>
+    <option value="-1">Netflix</option>
+    <option value="1">Music</option>
+    <option value="1">Go for Walk</option>
+    <option value="-1">Be extremely lazy</option>
+  </select>  <br> 
+ <br>  Your social life (0=none)
+ 
+      <select id="social"> <br>
+        <option value=0></option>
+    <option value="-2">0</option>
+    <option value="-1">1</option>
+    <option value="1">2</option>
+      <option value="2">3</option>
+  </select>  <br>
+ <br>  Your pet
+   <select id="whatpet"> <br>
+    <option value=0></option>
+    <option value="-2">cat</option>
+    <option value="2">dog</option>
+    <option value="-1">fish</option>
+      <option value="1">birds</option>
+  </select>  <br>
+<br>   What do you feel like doing
+   <select id="feellike"> <br>
+    <option value=0></option>
+    <option value="0">running</option>
+    <option value="-1">drawing</option>
+    <option value="2">shopping/hanging out</option>
+      <option value="-1">studying</option>
+  </select>  <br>
+ <br>  
+  
+
+            <br><input type="submit" value="submit" onclick="return getNumericValue();"> 
+        <script>
+function getNumericValue() {
+var x= document.getElementById("personality");
+var y = parseInt(x.options[x.selectedIndex].value);
+ var z= document.getElementById("freetime");
+var a = parseInt(z.options[z.selectedIndex].value);
+ var b= document.getElementById("social");
+var c = parseInt(b.options[b.selectedIndex].value);
+ var d= document.getElementById("whatpet");
+var e = parseInt(d.options[d.selectedIndex].value);
+ var f= document.getElementById("feellike");
+var g = parseInt(f.options[f.selectedIndex].value);
+
+var sum=y+a+c+e+g;
+//window.alert(sum);
+
+if (sum>0) {
+    window.alert("extrovert");
+}
+else if (sum<0) {
+  window.alert("introvert");
+}
+else if (sum=0) {
+  window.alert("ambbivert");
+}
+
+window.alert("score: "+sum);
+return true;
+}
+          
+        </script>
+
+</div> </div> <img src="iore.jpg" alt="data" width=400 height=711>  </div> </div>
+    </body>
+</html> 
+
+
+
